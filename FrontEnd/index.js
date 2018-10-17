@@ -16,8 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       notejsonObject.forEach((note) => {
         const newNote = new Note(note)
-        // const userHeader = document.querySelector(".user")
-        // userHeader.innerHTML = newNote.renderUser()
         sideBar.innerHTML += newNote.renderAll() //renders to the page
       })
     })
